@@ -24,8 +24,17 @@ html {
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #ffffff;
-        --text-color: #f8f9fa;
+        --text-color: #ffffff;
         --light-gray: #1a1a1a;
+    }
+
+    .navbar {
+        background-color: #000000;
+    }
+
+    .logo h1,
+    .nav-links a {
+        color: #ffffff;
     }
 
     body {
@@ -37,6 +46,19 @@ html {
     .testimonial-card,
     .budget-content {
         background-color: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .property-info h4,
+    .about-text h3,
+    .client-name,
+    .form-group label {
+        color: #000000;
+    }
+
+    .nav-links a:hover,
+    .logo h1:hover {
+        color: #121212;
     }
 }
 
@@ -124,6 +146,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    color: #000000;
 }
 
 .property-card:hover {
@@ -144,7 +167,7 @@ body {
 .property-info h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .property-info p {
@@ -286,21 +309,23 @@ body {
 }
 
 .contact-info-box {
-    background-color: var(--light-gray);
+    background-color: #000000;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #ffffff;
 }
 
 .info-item {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
+    color: #ffffff;
 }
 
 .info-item i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #ffffff;
     margin-right: 1rem;
 }
 
@@ -311,7 +336,7 @@ body {
 }
 
 .social-links a {
-    color: var(--primary-color);
+    color: #ffffff;
     font-size: 1.8rem;
     transition: color 0.3s ease;
     position: relative;
@@ -334,19 +359,19 @@ body {
 }
 
 .social-links a:hover {
-    color: var(--accent-color);
+    color: #ffffff;
 }
 
 .social-links .fa-whatsapp:hover {
-    color: #25d366;
+    color: #ffffff;
 }
 
 .social-links .fa-instagram:hover {
-    color: #e1306c;
+    color: #ffffff;
 }
 
 .social-links .fa-facebook:hover {
-    color: #1877f2;
+    color: #ffffff;
 }
 
 .contact-form {
@@ -354,6 +379,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #000000;
 }
 
 .form-group {
@@ -364,7 +390,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .form-group input,
@@ -430,6 +456,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
+    color: #000000;
 }
 
 .client-rating {
@@ -441,6 +468,7 @@ body {
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    color: #000000;
 }
 
 .client-info {
@@ -489,7 +517,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--primary-color);
+    background-color: #000000;
+    border-top: 5px solid #000000;
 }
 
 .logo {
@@ -497,21 +526,22 @@ body {
 }
 
 .logo h1 {
-    color: white;
+    color: #ffffff;
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo h1:hover {
     background-color: white;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .nav-links {
@@ -525,18 +555,19 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links a:hover {
-    background-color: white;
-    color: var(--primary-color);
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Estilos para links ativos */
@@ -568,16 +599,10 @@ body {
     }
 
     .nav-links a {
-        .logo a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        
-        .logo a:hover h1 {
-            background-color: white;
-            color: var(--primary-color);
-        }
+        display: block;
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links a {
@@ -602,19 +627,20 @@ body {
     text-align: center;
     max-width: 800px;
     margin: 2rem auto;
+    color: #000000;
 }
 
 .budget-text {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
-    color: var(--text-color);
+    color: #000000;
 }
 
 .budget-highlight {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--primary-color);
+    color: #000000;
     margin-bottom: 1rem;
 }
 
@@ -716,6 +742,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    color: #000000;
 }
 
 .property-card:hover {
@@ -736,7 +763,7 @@ body {
 .property-info h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .property-info p {
@@ -878,21 +905,23 @@ body {
 }
 
 .contact-info-box {
-    background-color: var(--light-gray);
+    background-color: #000000;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #ffffff;
 }
 
 .info-item {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
+    color: #ffffff;
 }
 
 .info-item i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #ffffff;
     margin-right: 1rem;
 }
 
@@ -903,7 +932,7 @@ body {
 }
 
 .social-links a {
-    color: var(--primary-color);
+    color: #ffffff;
     font-size: 1.8rem;
     transition: color 0.3s ease;
     position: relative;
@@ -926,19 +955,19 @@ body {
 }
 
 .social-links a:hover {
-    color: var(--accent-color);
+    color: #ffffff;
 }
 
 .social-links .fa-whatsapp:hover {
-    color: #25d366;
+    color: #ffffff;
 }
 
 .social-links .fa-instagram:hover {
-    color: #e1306c;
+    color: #ffffff;
 }
 
 .social-links .fa-facebook:hover {
-    color: #1877f2;
+    color: #ffffff;
 }
 
 .contact-form {
@@ -946,6 +975,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #000000;
 }
 
 .form-group {
@@ -956,7 +986,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .form-group input,
@@ -1022,6 +1052,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
+    color: #000000;
 }
 
 .client-rating {
@@ -1033,6 +1064,7 @@ body {
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    color: #000000;
 }
 
 .client-info {
@@ -1081,7 +1113,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--primary-color);
+    background-color: #000000;
+    border-top: 5px solid #000000;
 }
 
 .logo {
@@ -1089,21 +1122,22 @@ body {
 }
 
 .logo h1 {
-    color: white;
+    color: #ffffff;
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo h1:hover {
     background-color: white;
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .nav-links {
@@ -1117,18 +1151,19 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links a:hover {
-    background-color: white;
-    color: var(--primary-color);
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Estilos para links ativos */
@@ -1160,16 +1195,10 @@ body {
     }
 
     .nav-links a {
-        .logo a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        
-        .logo a:hover h1 {
-            background-color: white;
-            color: var(--primary-color);
-        }
+        display: block;
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links a {
@@ -1194,19 +1223,20 @@ body {
     text-align: center;
     max-width: 800px;
     margin: 2rem auto;
+    color: #000000;
 }
 
 .budget-text {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
-    color: var(--text-color);
+    color: #000000;
 }
 
 .budget-highlight {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--primary-color);
+    color: #000000;
     margin-bottom: 1rem;
 }
 
