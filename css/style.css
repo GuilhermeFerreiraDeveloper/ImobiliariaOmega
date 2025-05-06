@@ -134,9 +134,9 @@ body {
 
 /* Property Cards */
 .property-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -147,6 +147,9 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     color: #000000;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .property-card:hover {
@@ -446,14 +449,13 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Página de Depoimentos */
-.testimonials-section {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 4rem 2rem;
+/* Seção de Depoimentos */
+.testimonials {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
 }
 
-.testimonials-grid {
+.testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -466,7 +468,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-    color: #000000;
 }
 
 .client-rating {
@@ -498,6 +499,12 @@ body {
 .client-name {
     font-weight: bold;
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsividade adicional */
@@ -746,9 +753,9 @@ body {
 
 /* Property Cards */
 .property-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -759,6 +766,9 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     color: #000000;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .property-card:hover {
@@ -1058,14 +1068,13 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Página de Depoimentos */
-.testimonials-section {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 4rem 2rem;
+/* Seção de Depoimentos */
+.testimonials {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
 }
 
-.testimonials-grid {
+.testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -1078,7 +1087,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-    color: #000000;
 }
 
 .client-rating {
@@ -1110,6 +1118,12 @@ body {
 .client-name {
     font-weight: bold;
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsividade adicional */
