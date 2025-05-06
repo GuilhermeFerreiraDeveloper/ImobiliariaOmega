@@ -329,6 +329,15 @@ body {
     margin-right: 1rem;
 }
 
+.info-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: var(--accent-color);
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -538,6 +547,12 @@ body {
     transition: all 0.3s ease;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .logo h1:hover {
     background-color: white;
@@ -925,6 +940,15 @@ body {
     margin-right: 1rem;
 }
 
+.info-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: var(--accent-color);
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -1135,6 +1159,16 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo a:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
 .logo h1:hover {
     background-color: white;
     color: #000000;
@@ -1302,6 +1336,22 @@ body {
 }
 
 /* Ajustes de Responsividade para Laptops e Notebooks */
+.bank-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .bank-image {
+        max-height: 200px;
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1366px) {
     /* Ajustes do Hero */
     .hero {
