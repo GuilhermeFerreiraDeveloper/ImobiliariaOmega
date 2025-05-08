@@ -10,56 +10,15 @@ html {
 
 ::selection {
     background-color: var(--primary-color);
-    color: white;
+    color: #faf9f6;
 }
 
-    --primary-color: #030000;
-    --secondary-color: #e74c3c;
-    --accent-color: #e74c3c;
-    --light-gray: #f8f9fa;
+    --primary-color: #0C2F58;
+    --secondary-color: #ba8f38;
+    --accent-color: #ba8f38;
+    --light-gray: #dbdbdb;
     --text-color: #333;
     --max-width: 1200px;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #ffffff;
-        --text-color: #ffffff;
-        --light-gray: #1a1a1a;
-    }
-
-    .navbar {
-        background-color: #000000;
-    }
-
-    .logo h1,
-    .nav-links a {
-        color: #ffffff;
-    }
-
-    body {
-        background-color: #121212;
-    }
-
-    .property-card,
-    .contact-form,
-    .testimonial-card,
-    .budget-content {
-        background-color: #1a1a1a;
-        color: #ffffff;
-    }
-
-    .property-info h4,
-    .about-text h3,
-    .client-name,
-    .form-group label {
-        color: #000000;
-    }
-
-    .nav-links a:hover,
-    .logo h1:hover {
-        color: #121212;
-    }
 }
 
 * {
@@ -88,56 +47,15 @@ body {
     text-align: center;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--accent-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b;
-}
-
 /* Property Cards */
 .property-grid {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    text-align: center;
+    gap: 2rem; /* Adiciona espaçamento entre os cards */
 }
 
 .property-card {
@@ -146,10 +64,13 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    color: #000000;
+    color: #0C2F58;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .property-card:hover {
@@ -160,22 +81,38 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
-    max-height: 300px;
+    max-height: 500px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .property-info {
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Adiciona espaçamento entre os elementos */
 }
 
 .property-info h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #0C2F58;
+    text-align: center;
+    width: 100%;
 }
 
 .property-info p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
 }
 
 .price {
@@ -186,16 +123,20 @@ body {
 
 .property-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .property-button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* Social Media Section */
@@ -313,10 +254,10 @@ body {
 }
 
 .contact-info-box {
-    background-color: #000000;
+    background-color: #0C2F58;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(12, 47, 88, 0.1);
     color: #ffffff;
 }
 
@@ -392,7 +333,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    color: #000000;
+    color: #0C2F58;
 }
 
 .form-group {
@@ -403,7 +344,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .form-group input,
@@ -411,7 +352,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #ddd;
+    border: 1px solid #c6c0b7;
     border-radius: 5px;
     font-family: inherit;
 }
@@ -479,7 +420,7 @@ body {
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .client-info {
@@ -534,8 +475,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000000;
-    border-top: 5px solid #000000;
+    background-color: #0C2F58;
+    border-top: 5px solid #0C2F58;
 }
 
 .logo {
@@ -564,7 +505,7 @@ body {
 
 .logo h1:hover {
     background-color: white;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .nav-links {
@@ -590,7 +531,7 @@ body {
 
 .nav-links a:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #0C2F58;
 }
 
 /* Estilos para links ativos */
@@ -650,20 +591,20 @@ body {
     text-align: center;
     max-width: 800px;
     margin: 2rem auto;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .budget-text {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .budget-highlight {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #000000;
+    color: #0C2F58;
     margin-bottom: 1rem;
 }
 
@@ -707,56 +648,17 @@ body {
 .whatsapp-button i {
     font-size: 1.4rem;
 }
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--accent-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b;
-}
 
 /* Property Cards */
 .property-grid {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    text-align: center;
+    gap: 2rem; /* Adiciona espaçamento entre os cards */
 }
 
 .property-card {
@@ -765,10 +667,13 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    color: #000000;
+    color: #0C2F58;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .property-card:hover {
@@ -779,22 +684,38 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
-    max-height: 300px;
+    max-height: 500px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .property-info {
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Adiciona espaçamento entre os elementos */
 }
 
 .property-info h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #0C2F58;
+    text-align: center;
+    width: 100%;
 }
 
 .property-info p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
 }
 
 .price {
@@ -805,16 +726,20 @@ body {
 
 .property-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .property-button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* Social Media Section */
@@ -932,10 +857,10 @@ body {
 }
 
 .contact-info-box {
-    background-color: #000000;
+    background-color: #0C2F58;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(12, 47, 88, 0.1);
     color: #ffffff;
 }
 
@@ -1011,7 +936,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    color: #000000;
+    color: #0C2F58;
 }
 
 .form-group {
@@ -1022,7 +947,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .form-group input,
@@ -1030,7 +955,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #ddd;
+    border: 1px solid #c6c0b7;
     border-radius: 5px;
     font-family: inherit;
 }
@@ -1098,7 +1023,7 @@ body {
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .client-info {
@@ -1153,8 +1078,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000000;
-    border-top: 5px solid #000000;
+    background-color: #0C2F58;
+    border-top: 5px solid #0C2F58;
 }
 
 .logo {
@@ -1187,7 +1112,7 @@ body {
 
 .logo h1:hover {
     background-color: white;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .nav-links {
@@ -1209,11 +1134,14 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-links a:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #0C2F58;
 }
 
 /* Estilos para links ativos */
@@ -1243,18 +1171,6 @@ body {
         width: 100%;
         text-align: center;
     }
-
-    .nav-links a {
-        display: block;
-        padding: 0.8rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 0.8rem;
-    }
 }
 
 
@@ -1273,20 +1189,20 @@ body {
     text-align: center;
     max-width: 800px;
     margin: 2rem auto;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .budget-text {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
-    color: #000000;
+    color: #0C2F58;
 }
 
 .budget-highlight {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #000000;
+    color: #0C2F58;
     margin-bottom: 1rem;
 }
 
@@ -1330,17 +1246,55 @@ body {
 .whatsapp-button i {
     font-size: 1.4rem;
 }
+/* Hero Section */
+.hero {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-logo {
-    max-width: 150px;
-    height: auto;
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 /* Ajuste para telas menores */
